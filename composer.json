@@ -43,9 +43,9 @@
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
       "web-dir": ".Build/Web"
     }
+  },
+  "replace": {
+    "cal": "self.version",
+    "typo3-ter/cal": "self.version"
   }
-      "replace": {
-        "cal": "self.version",
-        "typo3-ter/cal": "self.version"
-    }
 }
