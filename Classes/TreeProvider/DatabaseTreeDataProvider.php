@@ -18,6 +18,9 @@ use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Imaging\Icon;
 use TYPO3\CMS\Core\Imaging\IconFactory;
 
+define('GLOBAL_PREFIX', 'global');
+define('CALENDAR_PREFIX', 'calendar_');
+
 /**
  * TCA tree data provider which considers
  */
@@ -29,9 +32,6 @@ class DatabaseTreeDataProvider extends \TYPO3\CMS\Core\Tree\TableConfiguration\D
 	protected $backendUserAuthentication;
 	
 	protected $parentRow;
-	
-	const CALENDAR_PREFIX = 'calendar_';
-	const GLOBAL_PREFIX = 'global';
 
 	/**
 	 * Required constructor
