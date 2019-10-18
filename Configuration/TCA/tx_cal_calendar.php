@@ -102,13 +102,6 @@ $tx_cal_calendar = array(
 							)
 					)
 			),
-			'nearby' => array(
-					'label' => 'LLL:EXT:cal/Resources/Private/Language/locallang_db.xml:tx_cal_calendar.nearby',
-					'displayCond' => 'EXT:wec_map:LOADED:true',
-					'config' => array(
-							'type' => 'check'
-					)
-			),
 			'type' => array(
 					'exclude' => 1,
 					'label' => 'LLL:EXT:cal/Resources/Private/Language/locallang_db.xml:tx_cal_calendar.type',
@@ -173,7 +166,6 @@ $tx_cal_calendar = array(
 					'exclude' => 1,
 					'l10n_mode' => 'exclude',
 					'label' => 'LLL:EXT:cal/Resources/Private/Language/locallang_db.xml:tx_cal_calendar.refresh',
-					'displayCond' => 'EXT:scheduler:LOADED:true',
 					'config' => array(
 							'type' => 'input',
 							'size' => '6',
@@ -185,7 +177,6 @@ $tx_cal_calendar = array(
 			'schedulerId' => array(
 					'exclude' => 0,
 					'label' => 'LLL:EXT:cal/Resources/Private/Language/locallang_db.xml:tx_cal_calendar.schedulerId',
-					'displayCond' => 'EXT:scheduler:LOADED:true',
 					'config' => array(
 							'type' => 'input',
 							'size' => '5',
@@ -283,8 +274,5 @@ $tx_cal_calendar = array(
 	)
 );
 
-if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded ('scheduler')){
-	$tx_cal_calendar['tx_cal_calendar']['columns']['refresh']['displayCond'] = 'EXT:scheduler:LOADED:true';
-}
 
 return $tx_cal_calendar;

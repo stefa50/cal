@@ -202,16 +202,6 @@
 							</config>
 						</TCEforms>
 					</subscription>
-					<subscribeWithCaptcha>
-						<TCEforms>
-							<exclude>1</exclude>
-							<label>LLL:EXT:cal/Resources/Private/Language/locallang_tca.xml:cal.pi_flexform.subscribeWithCaptcha</label>
-							<displayCond>EXT:captcha:LOADED:true</displayCond>
-							<config>
-								<type>check</type>
-							</config>
-						</TCEforms>
-					</subscribeWithCaptcha>
 					<weekStartDay>
 						<TCEforms>
 							<label>LLL:EXT:cal/Resources/Private/Language/locallang_tca.xml:cal.pi_flexform.weekStartDay</label>
@@ -237,18 +227,6 @@
 							</config>
 						</TCEforms>
 					</weekStartDay>
-					<calendarDistance>
-						<TCEforms>
-							<label>LLL:EXT:cal/Resources/Private/Language/locallang_tca.xml:cal.pi_flexform.calendarDistance</label>
-							<displayCond>EXT:wec_map:LOADED:true</displayCond>
-							<config>
-								<type>input</type>
-								<default>50</default>
-								<size>10</size>
-								<max>5</max>
-							</config>
-						</TCEforms>
-					</calendarDistance>
 				</el>
 			</ROOT>
 			<!-- xXX offset -->
